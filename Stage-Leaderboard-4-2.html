@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Renewal Stage Leaderboard — Week of 4/2/26</title>
+<style>
+  :root { --bg:#0f1117; --card:#1a1d27; --border:#2a2d3a; --text:#e4e4e7; --muted:#71717a; --accent:#a78bfa; --green:#4ade80; --red:#f87171; --yellow:#facc15; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Inter','Segoe UI',system-ui,sans-serif; padding:28px 32px; max-width:860px; margin:0 auto; }
+  h1 { font-size:20px; font-weight:700; color:var(--accent); margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:12px; margin-bottom:24px; }
+  h2 { font-size:16px; font-weight:700; color:var(--accent); margin:40px 0 16px; }
+  h3 { font-size:13px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; }
+  h3 .count { font-weight:400; color:var(--red); }
+  .lb { background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+  .lb table { width:100%; border-collapse:collapse; }
+  .lb th { text-align:left; padding:10px 16px; font-size:10px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); background:#14161e; border-bottom:1px solid var(--border); }
+  .lb td { padding:10px 16px; font-size:14px; border-bottom:1px solid rgba(42,45,58,0.5); }
+  .lb tr:last-child td { border-bottom:none; }
+  .lb .medal { width:36px; font-size:18px; text-align:center; }
+  .lb .owner { font-weight:600; }
+  .lb .pct { font-weight:700; font-size:15px; }
+  .lb .pct.green { color:var(--green); }
+  .lb .pct.yellow { color:var(--yellow); }
+  .lb .pct.red { color:var(--red); }
+  .lb .num { text-align:center; }
+  .month-block { margin-bottom:24px; }
+  .behind-table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .behind-table th { text-align:left; padding:8px 14px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:var(--muted); background:#14161e; border-bottom:1px solid var(--border); }
+  .behind-table td { padding:7px 14px; font-size:13px; border-bottom:1px solid rgba(42,45,58,0.4); }
+  .behind-table tr:last-child td { border-bottom:none; }
+  .owner-col { color:var(--muted); font-size:12px; }
+  .acct-col { font-weight:600; }
+  .stage-col { font-size:12px; color:var(--muted); }
+  .stage-col.should { color:var(--red); font-weight:600; }
+  .arrow { color:var(--red); text-align:center; padding:7px 4px; }
+  .days-col { font-size:12px; color:var(--muted); text-align:right; }
+  .overdue { color:var(--red); font-weight:700; }
+</style>
+</head>
+<body>
+<h1>Renewal Stage Leaderboard</h1>
+<div class="sub">Week of April 2, 2026 · All renewals March–July 2026</div>
+<div class="lb">
+  <table>
+    <thead><tr><th></th><th>Owner</th><th>On Track %</th><th>Accts</th><th>On Track</th><th>Behind</th></tr></thead>
+    <tbody><tr><td class="medal">🥇</td><td class="owner">Josh Small</td><td class="pct green">100%</td><td class="num">5</td><td class="num">5</td><td class="num">0</td></tr>
+<tr><td class="medal">🥈</td><td class="owner">Max Shiau</td><td class="pct green">100%</td><td class="num">2</td><td class="num">2</td><td class="num">0</td></tr>
+<tr><td class="medal">🥉</td><td class="owner">Madi Tostrud</td><td class="pct green">92%</td><td class="num">13</td><td class="num">12</td><td class="num">1</td></tr>
+<tr><td class="medal"></td><td class="owner">Amruth Banagiri</td><td class="pct green">90%</td><td class="num">10</td><td class="num">9</td><td class="num">1</td></tr>
+<tr><td class="medal"></td><td class="owner">Micaela Miner</td><td class="pct green">71%</td><td class="num">14</td><td class="num">10</td><td class="num">4</td></tr>
+<tr><td class="medal"></td><td class="owner">Joseph Hoyson</td><td class="pct green">67%</td><td class="num">12</td><td class="num">8</td><td class="num">4</td></tr>
+<tr><td class="medal"></td><td class="owner">Jeremy Lynn</td><td class="pct green">60%</td><td class="num">5</td><td class="num">3</td><td class="num">2</td></tr>
+<tr><td class="medal"></td><td class="owner">Emma Strupp</td><td class="pct red">27%</td><td class="num">22</td><td class="num">6</td><td class="num">16</td></tr>
+<tr><td class="medal"></td><td class="owner">Cole Courson</td><td class="pct red">0%</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td class="medal"></td><td class="owner">Jordan Mifflin</td><td class="pct red">0%</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td class="medal"></td><td class="owner">Tillman Degens</td><td class="pct red">0%</td><td class="num">4</td><td class="num">0</td><td class="num">4</td></tr>
+</tbody>
+  </table>
+</div>
+<h2>Renewals Behind Stage</h2>
+<div class="month-block">
+        <h3>March <span class="count">(3 behind)</span></h3>
+        <table class="behind-table">
+            <thead><tr><th>Owner</th><th>Account</th><th>Current Stage</th><th></th><th>Should Be</th><th>Renewal</th></tr></thead>
+            <tbody><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Extole</td>
+            <td class="stage-col">3 - Commercials</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col"><span class="overdue">5d overdue</span></td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">TuMeke Ergonomics</td>
+            <td class="stage-col">3 - Commercials</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col"><span class="overdue">15d overdue</span></td>
+        </tr><tr>
+            <td class="owner-col">Joseph Hoyson</td>
+            <td class="acct-col">Justworks</td>
+            <td class="stage-col">3 - Commercials</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col"><span class="overdue">16d overdue</span></td>
+        </tr></tbody>
+        </table>
+    </div><div class="month-block">
+        <h3>April <span class="count">(8 behind)</span></h3>
+        <table class="behind-table">
+            <thead><tr><th>Owner</th><th>Account</th><th>Current Stage</th><th></th><th>Should Be</th><th>Renewal</th></tr></thead>
+            <tbody><tr>
+            <td class="owner-col">Cole Courson</td>
+            <td class="acct-col">Noda ai</td>
+            <td class="stage-col">3 - Commercials</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col"><span class="overdue">4d overdue</span></td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Pilot</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col">14d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Neuron7.ai</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col">10d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Alpharun</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">25d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Remark</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">24d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Streamline AI</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">17d out</td>
+        </tr><tr>
+            <td class="owner-col">Micaela Miner</td>
+            <td class="acct-col">Enterpret</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">4 - Commit</td>
+            <td class="days-col">9d out</td>
+        </tr><tr>
+            <td class="owner-col">Micaela Miner</td>
+            <td class="acct-col">Amigo</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">24d out</td>
+        </tr></tbody>
+        </table>
+    </div><div class="month-block">
+        <h3>May <span class="count">(5 behind)</span></h3>
+        <table class="behind-table">
+            <thead><tr><th>Owner</th><th>Account</th><th>Current Stage</th><th></th><th>Should Be</th><th>Renewal</th></tr></thead>
+            <tbody><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Stytch</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">34d out</td>
+        </tr><tr>
+            <td class="owner-col">Jeremy Lynn</td>
+            <td class="acct-col">Mutiny</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">30d out</td>
+        </tr><tr>
+            <td class="owner-col">Joseph Hoyson</td>
+            <td class="acct-col">DynaFile</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">52d out</td>
+        </tr><tr>
+            <td class="owner-col">Joseph Hoyson</td>
+            <td class="acct-col">Surya Technologies</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">26d out</td>
+        </tr><tr>
+            <td class="owner-col">Micaela Miner</td>
+            <td class="acct-col">Codes Health</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">53d out</td>
+        </tr></tbody>
+        </table>
+    </div><div class="month-block">
+        <h3>June <span class="count">(11 behind)</span></h3>
+        <table class="behind-table">
+            <thead><tr><th>Owner</th><th>Account</th><th>Current Stage</th><th></th><th>Should Be</th><th>Renewal</th></tr></thead>
+            <tbody><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Abacum Business Development</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">86d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Nudge Security</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">68d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Rillet</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">83d out</td>
+        </tr><tr>
+            <td class="owner-col">Jeremy Lynn</td>
+            <td class="acct-col">ISI</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">57d out</td>
+        </tr><tr>
+            <td class="owner-col">Jordan Mifflin</td>
+            <td class="acct-col">Optura</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">72d out</td>
+        </tr><tr>
+            <td class="owner-col">Joseph Hoyson</td>
+            <td class="acct-col">Span</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">58d out</td>
+        </tr><tr>
+            <td class="owner-col">Madi Tostrud</td>
+            <td class="acct-col">ClickUp</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">79d out</td>
+        </tr><tr>
+            <td class="owner-col">Micaela Miner</td>
+            <td class="acct-col">Pirros</td>
+            <td class="stage-col">2 - Value Review</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">3 - Commercials</td>
+            <td class="days-col">58d out</td>
+        </tr><tr>
+            <td class="owner-col">Tillman Degens</td>
+            <td class="acct-col">Agentnoon</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">69d out</td>
+        </tr><tr>
+            <td class="owner-col">Tillman Degens</td>
+            <td class="acct-col">makedough.ai</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">79d out</td>
+        </tr><tr>
+            <td class="owner-col">Tillman Degens</td>
+            <td class="acct-col">Pacifica Advisors</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">86d out</td>
+        </tr></tbody>
+        </table>
+    </div><div class="month-block">
+        <h3>July <span class="count">(7 behind)</span></h3>
+        <table class="behind-table">
+            <thead><tr><th>Owner</th><th>Account</th><th>Current Stage</th><th></th><th>Should Be</th><th>Renewal</th></tr></thead>
+            <tbody><tr>
+            <td class="owner-col">Amruth Banagiri</td>
+            <td class="acct-col">Hammr</td>
+            <td class="stage-col">1 - Identified</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">87d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">SwagUp</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">2 - Value Review</td>
+            <td class="days-col">88d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">AdRoll</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">1 - Identified</td>
+            <td class="days-col">117d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Browserbase</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">1 - Identified</td>
+            <td class="days-col">114d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Laurel</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">1 - Identified</td>
+            <td class="days-col">114d out</td>
+        </tr><tr>
+            <td class="owner-col">Emma Strupp</td>
+            <td class="acct-col">Prismatic</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">1 - Identified</td>
+            <td class="days-col">117d out</td>
+        </tr><tr>
+            <td class="owner-col">Tillman Degens</td>
+            <td class="acct-col">Asseta</td>
+            <td class="stage-col">0 - Engage</td>
+            <td class="arrow">→</td>
+            <td class="stage-col should">1 - Identified</td>
+            <td class="days-col">117d out</td>
+        </tr></tbody>
+        </table>
+    </div>
+</body>
+</html>
